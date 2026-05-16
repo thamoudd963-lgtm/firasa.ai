@@ -243,8 +243,7 @@ except Exception:
     st.error("⚠ لم يتم العثور على مفتاح API في الـ Secrets.")
     st.stop()
 
-model = genai.GenerativeModel('gemini-1.5-flash-8b-001')
-
+model = genai.GenerativeModel('gemini-1.5-flash')
 # ── Input ──
 st.markdown('<p class="input-label">النص المراد تحليله</p>', unsafe_allow_html=True)
 user_input = st.text_area(
